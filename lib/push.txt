@@ -1,0 +1,20 @@
+…or create a new repository on the command line
+echo "# andrey253.github.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -m main
+git remote add origin https://github.com/Andrey253/fullScreen.git
+git push -u origin main
+
+
+flutter build apk --split-per-abi
+ cd D:/Flutter_apps/fastbloc; flutter build web ; cd build/web;git add .;git commit -m "standart commit"; git push -u origin main --force
+ cd C:/Users/andrey/fastbloc; flutter build web ; cd build/web;git add .;git commit -m "standart commit"; git push -u origin main --force
+
+ git push -u origin main --force
+ 
+ 
+./gradlew signingReport
+ flutter build apk --split-per-abi
+firebase emulators:start
