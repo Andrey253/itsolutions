@@ -33,6 +33,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   /// If installed FullScreen [isFullScreen] is true
   bool isFullScreen = false;
+
+  /// Url image
   String imageUrl = '';
   TextEditingController textController = TextEditingController();
 
@@ -44,6 +46,8 @@ class _HomePageState extends State<HomePage> {
           imageUrl: imageUrl,
           setUrlImage: setUrlImage,
           textController: textController),
+
+      /// Mode selection menu button.
       floatingActionButton: MenuButton(
         setFullScreenFunction: setFullScreen,
         exitFullscreenFunction: exitFullscreen,
@@ -51,6 +55,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  /// Mode change Fullscreen/exitFullscreen
   void onDoubleTapOnImage() async {
     if (kIsWeb) {
       isFullScreen ? exitFullscreen() : setFullScreen();
